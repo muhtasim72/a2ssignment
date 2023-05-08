@@ -1,0 +1,68 @@
+Question no 1 ans: 
+Use a for loop to iterate over an array. Use a for loop when you know the loop should execute n times.
+Use a while loop for reading a file into a variable. Use a while loop when asking for user input.
+
+Question number 2 ans: 
+
+# Sum of natural numbers up to num
+
+num = 16
+
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   # use while loop to iterate until zero
+   while(num > 0):
+       sum += num
+       num -= 1
+   print("The sum is", sum)
+   the sum is 136
+   >
+   
+   Question number 3 answeer:
+   
+   unit = int(input("Enter your unit: "))
+if unit <= 100:
+    bill = unit * 3.46
+elif unit >= 101 and unit <= 300:
+    bill = 346 + ((unit - 100) * 7.43)
+elif unit >= 301 and unit <= 500:
+    bill = 346 + 1486 + ((unit - 300) * 10.32)
+else:
+    bill = 346 + 1486 + 2064 + ((unit - 500) * 11.71)
+print("Bill Per Unit:",bill)
+bill = bill + (unit*1.45)
+print("Bill after adding Line rent:",bill)
+bill = bill + 100
+print("Bill after adding Meter rent:",bill)
+bill = bill + (bill*0.16)
+print("Total Bill after adding tax:",bill)
+
+Enter your unit: 106
+
+Bill Per Unit: 390.58
+
+Bill after adding Line rent: 544.28
+
+Bill after adding Meter rent: 644.28 Total Bill after adding tax: 747.3648
+
+Question number 4 answer
+
+def cube_list_recursive(lst):
+    if len(lst) == 0:
+        return []
+    else:
+        return [lst[0]**3] + cube_list_recursive(lst[1:])
+ 
+# Initializing list
+l = [1, 2, 3, 4]
+ 
+# Cube List using loop
+res = cube_list_recursive(l)
+ 
+# printing result
+print(res)
+1, 8, 27, 64 
+Question number 5 
+i want to be data science
